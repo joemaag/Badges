@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nb9-ST-poL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Badge Gallery View Controller-->
+        <scene sceneID="lH7-k1-hhA">
+            <objects>
+                <collectionViewController id="GGK-fA-Z4Y" customClass="BadgeGalleryViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="X3a-V9-hCn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.97777777777777775" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="3" id="t5O-2O-WbS">
+                            <size key="itemSize" width="98" height="143"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="V1Z-xi-fIs" customClass="BadgeCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="98" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Lorem ipsum dolor dfg dfg" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onH-hj-iQH">
+                                            <rect key="frame" x="1" y="70" width="96" height="73"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="0.72311921296296311" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crA-8w-FJx">
+                                            <rect key="frame" x="17" y="0.0" width="64" height="64"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.97777777777777775" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="badgeImageView" destination="crA-8w-FJx" id="9KP-AS-u84"/>
+                                    <outlet property="badgeTextView" destination="onH-hj-iQH" id="uPJ-j7-P1M"/>
+                                    <segue destination="Yxi-iG-7vb" kind="show" id="JhC-f5-wup"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="Flr-d9-YCD" customClass="BadgeCollectionCategoryHeader">
+                            <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swM-hY-FPP">
+                                    <rect key="frame" x="170" y="14" width="260" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="260" id="3n2-MN-Ax9"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottomMargin" secondItem="swM-hY-FPP" secondAttribute="bottom" constant="7" id="Hay-c2-FmA"/>
+                                <constraint firstAttribute="centerX" secondItem="swM-hY-FPP" secondAttribute="centerX" id="WyQ-6c-yso"/>
+                                <constraint firstItem="swM-hY-FPP" firstAttribute="top" secondItem="Flr-d9-YCD" secondAttribute="topMargin" constant="6" id="kU4-Zf-KKB"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="categoryLabel" destination="swM-hY-FPP" id="Tas-Ds-f3Y"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="GGK-fA-Z4Y" id="CFF-K2-q4F"/>
+                            <outlet property="delegate" destination="GGK-fA-Z4Y" id="KjN-E4-FNe"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="fzH-cZ-NLk">
+                        <barButtonItem key="rightBarButtonItem" title="Categories" id="TpN-hQ-Z0Z"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="categoriesBarButtonItem" destination="TpN-hQ-Z0Z" id="UkU-zP-4tj"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bqx-rn-apF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="399"/>
+        </scene>
+        <!--Badge Detail View Controller-->
+        <scene sceneID="q6x-KQ-MdO">
+            <objects>
+                <viewController id="Yxi-iG-7vb" customClass="BadgeDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uLR-VM-eno"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wes-o7-RoT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cin-YK-cjH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="the-kg-DOa">
+                                <rect key="frame" x="220" y="173" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Nul-xV-61J"/>
+                                    <constraint firstAttribute="width" constant="160" id="PaO-ht-Rj5"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JAd-YS-z60">
+                                <rect key="frame" x="124" y="93" width="352" height="60"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C5D-j2-Khf">
+                                <rect key="frame" x="149" y="384" width="303" height="100"/>
+                                <color key="textColor" white="0.20052083333333337" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8F-Mc-kBY">
+                                <rect key="frame" x="220" y="485" width="160" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.94453125000000004" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="C5D-j2-Khf" secondAttribute="centerX" id="3Ck-kC-5R5"/>
+                            <constraint firstAttribute="centerX" secondItem="JAd-YS-z60" secondAttribute="centerX" id="eiG-la-D7N"/>
+                            <constraint firstAttribute="centerX" secondItem="the-kg-DOa" secondAttribute="centerX" id="kbk-av-hs0"/>
+                            <constraint firstAttribute="centerX" secondItem="M8F-Mc-kBY" secondAttribute="centerX" id="w4z-yk-Ka3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="badgeDetailTextView" destination="C5D-j2-Khf" id="hXZ-KV-U0J"/>
+                        <outlet property="badgeImageView" destination="the-kg-DOa" id="zzD-Hu-Tyk"/>
+                        <outlet property="badgeTitleTextView" destination="JAd-YS-z60" id="53H-ou-uGG"/>
+                        <outlet property="pointsLabel" destination="M8F-Mc-kBY" id="pZS-R1-6fZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8h-Xa-3Pj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2942" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rcn-Kn-ysd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nb9-ST-poL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4sc-IO-hus">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GGK-fA-Z4Y" kind="relationship" relationship="rootViewController" id="nC7-1e-QlK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDn-5g-whM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="399"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="CGB-bC-8qe">
+            <objects>
+                <tableViewController storyboardIdentifier="categoryTableViewController" title="Categories" id="R66-n8-cjR" customClass="CategoryTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="167" sectionHeaderHeight="22" sectionFooterHeight="22" id="cNy-wq-lgi">
+                        <rect key="frame" x="0.0" y="94" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="167" id="wwa-aI-gHI" customClass="CategoryTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wwa-aI-gHI" id="98r-st-YFi">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zn-2h-59x">
+                                            <rect key="frame" x="182" y="10" width="236" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Nh0-fH-dTC"/>
+                                                <constraint firstAttribute="width" constant="236" id="mbA-gM-bIb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Desciptio" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EM-Uo-Q06">
+                                            <rect key="frame" x="150" y="92" width="300" height="63"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="i5Q-if-3zx"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8db-1J-f4D">
+                                            <rect key="frame" x="273" y="39" width="55" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="RLj-tJ-4g2"/>
+                                                <constraint firstAttribute="height" constant="55" id="dSJ-Rt-b0p"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5zn-2h-59x" firstAttribute="centerX" secondItem="1EM-Uo-Q06" secondAttribute="centerX" id="5Ne-e8-y10"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1EM-Uo-Q06" secondAttribute="bottom" constant="3" id="6Nm-Am-W0C"/>
+                                        <constraint firstItem="5zn-2h-59x" firstAttribute="top" secondItem="98r-st-YFi" secondAttribute="topMargin" constant="2" id="7IA-f6-7Ff"/>
+                                        <constraint firstAttribute="centerX" secondItem="5zn-2h-59x" secondAttribute="centerX" id="IOK-dI-eYN"/>
+                                        <constraint firstAttribute="centerX" secondItem="8db-1J-f4D" secondAttribute="centerX" id="Khy-KN-Vnt"/>
+                                        <constraint firstAttribute="centerX" secondItem="1EM-Uo-Q06" secondAttribute="centerX" id="NX6-Eh-5Z5"/>
+                                        <constraint firstItem="8db-1J-f4D" firstAttribute="top" secondItem="5zn-2h-59x" secondAttribute="bottom" constant="8" symbolic="YES" id="p6z-qe-ZZO"/>
+                                        <constraint firstItem="1EM-Uo-Q06" firstAttribute="top" secondItem="5zn-2h-59x" secondAttribute="bottom" constant="61" id="siF-oV-QfV"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.97416087962962961" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="categoryDescriptionTextView" destination="1EM-Uo-Q06" id="Z2v-kO-5h5"/>
+                                    <outlet property="categoryIconImageView" destination="8db-1J-f4D" id="MnC-RP-krA"/>
+                                    <outlet property="categoryNameLabel" destination="5zn-2h-59x" id="GgL-eV-A4s"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="R66-n8-cjR" id="so5-jY-0Ii"/>
+                            <outlet property="delegate" destination="R66-n8-cjR" id="jQp-se-oEG"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="YRZ-js-e5z"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qI-8N-K3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="1115"/>
+        </scene>
+    </scenes>
+</document>

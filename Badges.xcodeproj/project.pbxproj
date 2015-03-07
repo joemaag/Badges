@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E82F6CBA1A96702300F835D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6CB91A96702300F835D5 /* main.m */; };
+		E82F6CBD1A96702300F835D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6CBC1A96702300F835D5 /* AppDelegate.m */; };
+		E82F6CC31A96702300F835D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82F6CC11A96702300F835D5 /* Main.storyboard */; };
+		E82F6CC51A96702300F835D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82F6CC41A96702300F835D5 /* Images.xcassets */; };
+		E82F6CC81A96702300F835D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82F6CC61A96702300F835D5 /* LaunchScreen.xib */; };
+		E82F6CD41A96702300F835D5 /* BadgesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6CD31A96702300F835D5 /* BadgesTests.m */; };
+		E82F6CDF1A9674AF00F835D5 /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6CDE1A9674AF00F835D5 /* Badge.m */; };
+		E82F6CE21A9810A400F835D5 /* BadgeGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6CE11A9810A400F835D5 /* BadgeGalleryViewController.m */; };
+		E82F6CEB1A98171500F835D5 /* BadgeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6CEA1A98171500F835D5 /* BadgeCollectionViewCell.m */; };
+		E82F6D201A9972B100F835D5 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6D1F1A9972B100F835D5 /* DownloadManager.m */; };
+		E82F6D291A997B8700F835D5 /* BadgeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6D281A997B8700F835D5 /* BadgeCategory.m */; };
+		E82F6D2C1A9BBD5F00F835D5 /* BadgeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6D2B1A9BBD5F00F835D5 /* BadgeDetailViewController.m */; };
+		E82F6D2F1A9BE33C00F835D5 /* BadgeCollectionCategoryHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6D2E1A9BE33C00F835D5 /* BadgeCollectionCategoryHeader.m */; };
+		E82F6D321A9D671600F835D5 /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6D311A9D671600F835D5 /* CategoryTableViewController.m */; };
+		E82F6D351A9D6A9500F835D5 /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F6D341A9D6A9500F835D5 /* CategoryTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E82F6CCE1A96702300F835D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E82F6CAC1A96702300F835D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E82F6CB31A96702300F835D5;
+			remoteInfo = Badges;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E82F6CB41A96702300F835D5 /* Badges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Badges.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82F6CB81A96702300F835D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E82F6CB91A96702300F835D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E82F6CBB1A96702300F835D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E82F6CBC1A96702300F835D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E82F6CC21A96702300F835D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E82F6CC41A96702300F835D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E82F6CC71A96702300F835D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E82F6CCD1A96702300F835D5 /* BadgesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadgesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82F6CD21A96702300F835D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E82F6CD31A96702300F835D5 /* BadgesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgesTests.m; sourceTree = "<group>"; };
+		E82F6CDD1A9674AF00F835D5 /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
+		E82F6CDE1A9674AF00F835D5 /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
+		E82F6CE01A9810A400F835D5 /* BadgeGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeGalleryViewController.h; sourceTree = "<group>"; };
+		E82F6CE11A9810A400F835D5 /* BadgeGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeGalleryViewController.m; sourceTree = "<group>"; };
+		E82F6CE91A98171500F835D5 /* BadgeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeCollectionViewCell.h; sourceTree = "<group>"; };
+		E82F6CEA1A98171500F835D5 /* BadgeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCollectionViewCell.m; sourceTree = "<group>"; };
+		E82F6D1E1A9972B100F835D5 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		E82F6D1F1A9972B100F835D5 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		E82F6D271A997B8700F835D5 /* BadgeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeCategory.h; sourceTree = "<group>"; };
+		E82F6D281A997B8700F835D5 /* BadgeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCategory.m; sourceTree = "<group>"; };
+		E82F6D2A1A9BBD5F00F835D5 /* BadgeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailViewController.h; sourceTree = "<group>"; };
+		E82F6D2B1A9BBD5F00F835D5 /* BadgeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailViewController.m; sourceTree = "<group>"; };
+		E82F6D2D1A9BE33C00F835D5 /* BadgeCollectionCategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeCollectionCategoryHeader.h; sourceTree = "<group>"; };
+		E82F6D2E1A9BE33C00F835D5 /* BadgeCollectionCategoryHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCollectionCategoryHeader.m; sourceTree = "<group>"; };
+		E82F6D301A9D671600F835D5 /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
+		E82F6D311A9D671600F835D5 /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
+		E82F6D331A9D6A9500F835D5 /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewCell.h; sourceTree = "<group>"; };
+		E82F6D341A9D6A9500F835D5 /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E82F6CB11A96702300F835D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82F6CCA1A96702300F835D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E82F6CAB1A96702300F835D5 = {
+			isa = PBXGroup;
+			children = (
+				E82F6CB61A96702300F835D5 /* Badges */,
+				E82F6CD01A96702300F835D5 /* BadgesTests */,
+				E82F6CB51A96702300F835D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E82F6CB51A96702300F835D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E82F6CB41A96702300F835D5 /* Badges.app */,
+				E82F6CCD1A96702300F835D5 /* BadgesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E82F6CB61A96702300F835D5 /* Badges */ = {
+			isa = PBXGroup;
+			children = (
+				E82F6CBB1A96702300F835D5 /* AppDelegate.h */,
+				E82F6CBC1A96702300F835D5 /* AppDelegate.m */,
+				E82F6CDD1A9674AF00F835D5 /* Badge.h */,
+				E82F6CDE1A9674AF00F835D5 /* Badge.m */,
+				E82F6D271A997B8700F835D5 /* BadgeCategory.h */,
+				E82F6D281A997B8700F835D5 /* BadgeCategory.m */,
+				E82F6D1E1A9972B100F835D5 /* DownloadManager.h */,
+				E82F6D1F1A9972B100F835D5 /* DownloadManager.m */,
+				E82F6D371A9E739000F835D5 /* Badge Views and Controllers */,
+				E82F6D381A9E73A800F835D5 /* Category Views and Controllers */,
+				E82F6CC11A96702300F835D5 /* Main.storyboard */,
+				E82F6CC41A96702300F835D5 /* Images.xcassets */,
+				E82F6CC61A96702300F835D5 /* LaunchScreen.xib */,
+				E82F6CB71A96702300F835D5 /* Supporting Files */,
+			);
+			path = Badges;
+			sourceTree = "<group>";
+		};
+		E82F6CB71A96702300F835D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E82F6CB81A96702300F835D5 /* Info.plist */,
+				E82F6CB91A96702300F835D5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E82F6CD01A96702300F835D5 /* BadgesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E82F6CD31A96702300F835D5 /* BadgesTests.m */,
+				E82F6CD11A96702300F835D5 /* Supporting Files */,
+			);
+			path = BadgesTests;
+			sourceTree = "<group>";
+		};
+		E82F6CD11A96702300F835D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E82F6CD21A96702300F835D5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E82F6D371A9E739000F835D5 /* Badge Views and Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E82F6CE01A9810A400F835D5 /* BadgeGalleryViewController.h */,
+				E82F6CE11A9810A400F835D5 /* BadgeGalleryViewController.m */,
+				E82F6CE91A98171500F835D5 /* BadgeCollectionViewCell.h */,
+				E82F6CEA1A98171500F835D5 /* BadgeCollectionViewCell.m */,
+				E82F6D2A1A9BBD5F00F835D5 /* BadgeDetailViewController.h */,
+				E82F6D2B1A9BBD5F00F835D5 /* BadgeDetailViewController.m */,
+				E82F6D2D1A9BE33C00F835D5 /* BadgeCollectionCategoryHeader.h */,
+				E82F6D2E1A9BE33C00F835D5 /* BadgeCollectionCategoryHeader.m */,
+			);
+			name = "Badge Views and Controllers";
+			sourceTree = "<group>";
+		};
+		E82F6D381A9E73A800F835D5 /* Category Views and Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E82F6D301A9D671600F835D5 /* CategoryTableViewController.h */,
+				E82F6D311A9D671600F835D5 /* CategoryTableViewController.m */,
+				E82F6D331A9D6A9500F835D5 /* CategoryTableViewCell.h */,
+				E82F6D341A9D6A9500F835D5 /* CategoryTableViewCell.m */,
+			);
+			name = "Category Views and Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E82F6CB31A96702300F835D5 /* Badges */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E82F6CD71A96702300F835D5 /* Build configuration list for PBXNativeTarget "Badges" */;
+			buildPhases = (
+				E82F6CB01A96702300F835D5 /* Sources */,
+				E82F6CB11A96702300F835D5 /* Frameworks */,
+				E82F6CB21A96702300F835D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Badges;
+			productName = Badges;
+			productReference = E82F6CB41A96702300F835D5 /* Badges.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E82F6CCC1A96702300F835D5 /* BadgesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E82F6CDA1A96702300F835D5 /* Build configuration list for PBXNativeTarget "BadgesTests" */;
+			buildPhases = (
+				E82F6CC91A96702300F835D5 /* Sources */,
+				E82F6CCA1A96702300F835D5 /* Frameworks */,
+				E82F6CCB1A96702300F835D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E82F6CCF1A96702300F835D5 /* PBXTargetDependency */,
+			);
+			name = BadgesTests;
+			productName = BadgesTests;
+			productReference = E82F6CCD1A96702300F835D5 /* BadgesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E82F6CAC1A96702300F835D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Joseph Maag";
+				TargetAttributes = {
+					E82F6CB31A96702300F835D5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E82F6CCC1A96702300F835D5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E82F6CB31A96702300F835D5;
+					};
+				};
+			};
+			buildConfigurationList = E82F6CAF1A96702300F835D5 /* Build configuration list for PBXProject "Badges" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E82F6CAB1A96702300F835D5;
+			productRefGroup = E82F6CB51A96702300F835D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E82F6CB31A96702300F835D5 /* Badges */,
+				E82F6CCC1A96702300F835D5 /* BadgesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E82F6CB21A96702300F835D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82F6CC31A96702300F835D5 /* Main.storyboard in Resources */,
+				E82F6CC81A96702300F835D5 /* LaunchScreen.xib in Resources */,
+				E82F6CC51A96702300F835D5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82F6CCB1A96702300F835D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E82F6CB01A96702300F835D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82F6D201A9972B100F835D5 /* DownloadManager.m in Sources */,
+				E82F6D2F1A9BE33C00F835D5 /* BadgeCollectionCategoryHeader.m in Sources */,
+				E82F6CDF1A9674AF00F835D5 /* Badge.m in Sources */,
+				E82F6D291A997B8700F835D5 /* BadgeCategory.m in Sources */,
+				E82F6CBD1A96702300F835D5 /* AppDelegate.m in Sources */,
+				E82F6CE21A9810A400F835D5 /* BadgeGalleryViewController.m in Sources */,
+				E82F6D351A9D6A9500F835D5 /* CategoryTableViewCell.m in Sources */,
+				E82F6D2C1A9BBD5F00F835D5 /* BadgeDetailViewController.m in Sources */,
+				E82F6CEB1A98171500F835D5 /* BadgeCollectionViewCell.m in Sources */,
+				E82F6CBA1A96702300F835D5 /* main.m in Sources */,
+				E82F6D321A9D671600F835D5 /* CategoryTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82F6CC91A96702300F835D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82F6CD41A96702300F835D5 /* BadgesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E82F6CCF1A96702300F835D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E82F6CB31A96702300F835D5 /* Badges */;
+			targetProxy = E82F6CCE1A96702300F835D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E82F6CC11A96702300F835D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E82F6CC21A96702300F835D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E82F6CC61A96702300F835D5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E82F6CC71A96702300F835D5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E82F6CD51A96702300F835D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E82F6CD61A96702300F835D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E82F6CD81A96702300F835D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Badges/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E82F6CD91A96702300F835D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Badges/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E82F6CDB1A96702300F835D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BadgesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Badges.app/Badges";
+			};
+			name = Debug;
+		};
+		E82F6CDC1A96702300F835D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BadgesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Badges.app/Badges";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E82F6CAF1A96702300F835D5 /* Build configuration list for PBXProject "Badges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82F6CD51A96702300F835D5 /* Debug */,
+				E82F6CD61A96702300F835D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E82F6CD71A96702300F835D5 /* Build configuration list for PBXNativeTarget "Badges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82F6CD81A96702300F835D5 /* Debug */,
+				E82F6CD91A96702300F835D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E82F6CDA1A96702300F835D5 /* Build configuration list for PBXNativeTarget "BadgesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82F6CDB1A96702300F835D5 /* Debug */,
+				E82F6CDC1A96702300F835D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E82F6CAC1A96702300F835D5 /* Project object */;
+}

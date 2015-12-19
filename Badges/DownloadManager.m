@@ -10,8 +10,8 @@
 #import "Badge.h"
 #import "BadgeCategory.h"
 
-static NSString * const badgeURLString = @"http://www.khanacademy.org/api/v1/badges";
-static NSString * const categoryURLString = @"http://www.khanacademy.org/api/v1/badges/categories";
+static NSString * const badgeURLString = @"https://www.khanacademy.org/api/v1/badges";
+static NSString * const categoryURLString = @"https://www.khanacademy.org/api/v1/badges/categories";
 
 @interface DownloadManager ()
 
